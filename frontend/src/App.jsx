@@ -138,7 +138,7 @@ export default function App() {
       formData.append('guidelines', guidelines)
       formData.append('jobUrl', jobUrl.trim())
 
-      const res = await fetch('/api/analyse', {
+      const res = await fetch('https://cv-strategist-production.up.railway.app/api/analyse', {
         method: 'POST',
         body: formData,
       })
